@@ -1,0 +1,103 @@
+.progress-panel {
+  padding: 32px;
+}
+
+.progress-header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.progress-header p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+.progress-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: rgba(56, 189, 248, 0.14);
+  color: #bae6fd;
+}
+
+.progress-bar-shell {
+  width: 100%;
+  height: 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.progress-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.progress-card {
+  text-align: center;
+  border-radius: 24px;
+  background: rgba(2, 6, 23, 0.3);
+  border: 1px solid var(--border);
+  padding: 24px 18px;
+}
+
+.progress-card p {
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.progress-card strong {
+  font-size: 2rem;
+}
+
+.badge-name {
+  font-size: 1.2rem !important;
+  color: #dcfce7;
+}
+
+@media (max-width: 900px) {
+  .progress-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .progress-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/**/
+
+.progress-actions {
+  margin: 18px 0 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.go-lessons-button {
+  border: none;
+  background: #38bdf8;
+  color: #082032;
+  padding: 12px 18px;
+  border-radius: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.go-lessons-button:hover {
+  background: #0ea5e9;
+}
